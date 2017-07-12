@@ -23,7 +23,7 @@ public class FileStatistics2 {
             text = Paths.get(args[0]);
             docx = Paths.get(args[1]);
         }catch(ArrayIndexOutOfBoundsException ex){
-            System.out.println("Usage: java FileStatistics <your text file> <your docx file>\nPaths must be absolute");
+            System.out.println("Usage: java FileStatistics2 <your text file> <your docx file>\nPaths must be absolute.");
             System.exit(1);
         }
 
@@ -36,7 +36,7 @@ public class FileStatistics2 {
             textAttributes = Files.readAttributes(text, BasicFileAttributes.class);
             docxAttributes = Files.readAttributes(docx, BasicFileAttributes.class);
         } catch(IOException ex){
-            System.out.println("There was an IO error.");
+            System.out.println("There was an IO error. This likely means you entered incorrect file paths.");
             System.exit(1);
         }
 

@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class TestScore {
     public static void main(String[] args){
         Scanner console = new Scanner(System.in);
-        // Create the roster with 5 indexes. These represent thefive students.
+        // Create the roster with 5 indexes. These represent the five students.
         double[] roster = new double[5];
 
         // Loop through the roster and just try to put each new double from our scanner into their grade
@@ -27,7 +27,7 @@ public class TestScore {
             System.out.printf("Student %d:\t%.2f\n", i, roster[i]);
         }
     }
-    
+
     // Our getScore method will attempt to get a double from the user, and throw a ScoreException if that double is
     // not within the predetermined range.
     private static double getScore(Scanner input, int studentID) throws ScoreException{

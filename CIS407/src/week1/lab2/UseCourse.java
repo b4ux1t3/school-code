@@ -11,7 +11,7 @@ public class UseCourse {
         Scanner console = new Scanner(System.in);
 
         // We want to simulate the user entering multiple courses, so this will be put in a while loop.
-        // In order to save the garbage collector some work,  we'll be declaring these variables outside
+        // In order to save the garbage collector some work, we'll be declaring these variables outside
         // of the loop, so that we don't have to make the garbage collector collect the same thing over
         // and over again. If this were real, we'd probably pipe the output to a database to be stored.
         // In this case, we're just going to keep overwriting the courses.
